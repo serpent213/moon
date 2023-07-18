@@ -19,7 +19,7 @@ defmodule MoonWeb.Examples.Design.BottomSheetExample.CustomHeight do
           first_name: "First Name #{x}",
           last_name: "Last Name #{x}",
           status: "Status #{x}",
-          created_at: DateTime.add(DateTime.utc_now(), -3600 + x)
+          created_at: DateTime.add(DateTime.utc_now(), -3600 + x, :second, Calendar.UTCOnlyTimeZoneDatabase)
         }
       end)
   )
@@ -93,7 +93,7 @@ defmodule MoonWeb.Examples.Design.BottomSheetExample.CustomHeight do
             first_name: "First Name #\{x}",
             last_name: "Last Name #\{x}",
             status: "Status #\{x}",
-            created_at: DateTime.add(DateTime.utc_now(), -3600 + x)
+            created_at: DateTime.add(DateTime.utc_now(), -3600 * x, :second, Calendar.UTCOnlyTimeZoneDatabase)
           }
         end)
     )
