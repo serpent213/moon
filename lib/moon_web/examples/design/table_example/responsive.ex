@@ -18,7 +18,7 @@ defmodule MoonWeb.Examples.Design.TableExample.Responsive do
         %{
           id: x,
           name: "Name #{x}",
-          created_at: DateTime.add(DateTime.utc_now(), -3600 + x, :second, Calendar.UTCOnlyTimeZoneDatabase),
+          created_at: DateTime.add(DateTime.utc_now(), -3600 * x, :second, Calendar.UTCOnlyTimeZoneDatabase),
           user: "User ##{x}",
           lorem: "lorem ipsum dolor sit almet",
           long_text: lorem()
@@ -70,7 +70,7 @@ defmodule MoonWeb.Examples.Design.TableExample.Responsive do
           %{
             id: x,
             name: "Name \#{x}",
-            created_at: DateTime.add(DateTime.utc_now(), -3600 + x, :second, Calendar.UTCOnlyTimeZoneDatabase),
+            created_at: DateTime.add(DateTime.utc_now(), -3600 * x, :second, Calendar.UTCOnlyTimeZoneDatabase),
             user: "User #\#{x}",
             lorem: "lorem ipsum dolor sit almet",
             long_text: lorem()

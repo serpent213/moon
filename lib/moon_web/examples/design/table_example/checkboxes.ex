@@ -17,7 +17,7 @@ defmodule MoonWeb.Examples.Design.TableExample.Checkboxes do
         %{
           id: x,
           name: "Name #{x}",
-          created_at: DateTime.add(DateTime.utc_now(), -3600 + x, :second, Calendar.UTCOnlyTimeZoneDatabase)
+          created_at: DateTime.add(DateTime.utc_now(), -3600 * x, :second, Calendar.UTCOnlyTimeZoneDatabase)
         }
       end)
   )
@@ -78,7 +78,7 @@ defmodule MoonWeb.Examples.Design.TableExample.Checkboxes do
           %{
             id: x,
             name: "Name #\{x}",
-            created_at: DateTime.add(DateTime.utc_now(), -3600 + x, :second, Calendar.UTCOnlyTimeZoneDatabase)
+            created_at: DateTime.add(DateTime.utc_now(), -3600 * x, :second, Calendar.UTCOnlyTimeZoneDatabase)
           }
         end)
     )
